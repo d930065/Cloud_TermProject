@@ -11,7 +11,6 @@ const FileUpload = () => {
 
   const [file, setFile] = useState('');
   const [filename, setFilename] = useState('Choose file');
-  const [uploadedFile, setUploadedFile] = useState('');
   const [message, setMessage] = useState('');
   const [uploadedPercentage, setUploadedPercentage] = useState(0);
   const [minsup, setMinsup] = useState(0.05);
@@ -20,7 +19,6 @@ const FileUpload = () => {
   const [rows, setRows] = useState([]);
   const [sort, setSort] = useState('');
   const [history, setHistory] = useState([]);
-  var history_page = true;
 
   function createData(rule, sup, conf, conv, lift) {
     return { rule, sup, conf, conv, lift };
